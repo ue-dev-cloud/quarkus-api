@@ -19,6 +19,7 @@ public class HttpFunctionTest implements HttpFunction {
 
     @Override
     public void service(HttpRequest httpRequest, HttpResponse httpResponse) throws Exception {
+        httpResponse.setContentType("application/json");
         Writer writer = httpResponse.getWriter();
         writer.write(greetingService.hello());
     }
