@@ -37,7 +37,7 @@ jobs:
       - name: Deploy to Cloud Functions
         run: |
           gcloud functions deploy $SERVICE_NAME \
-            --entry-point=io.quarkus.gcp.functions.QuarkusHttpFunction \
+            --entry-point=io.quarkus.gcp.functions.http.QuarkusHttpFunction \
             --runtime=java21 \
             --trigger-http \
             --allow-unauthenticated \
