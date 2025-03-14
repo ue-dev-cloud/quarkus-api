@@ -1,7 +1,11 @@
 package org.acme;
 
-public class Order {
+import java.util.Date;
+
+public class OrderFirebase {
     private String name;
     private String address;
     private String product;
+    public Date orderDate;
+    public Date deliveryDate;
 }
